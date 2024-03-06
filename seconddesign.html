@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        html,body{
+            height: 100%;
+            width: 100%;
+        }
+        .main{
+            height: 100%;
+            width: 100%;
+        }
+        .header{
+            /* height: 100px; */
+            background-color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 40px;
+            border-bottom: 2px solid rgba(0, 0, 0, 0.205);
+        }
+        .sec-main{
+            height: 85.9%;
+            width: 100%;
+            display: flex;
+        }
+        .main .sec-main .left{
+            width: 40%;
+            height: 100%;
+            background-color: red;
+        }
+        .main .sec-main .right{
+            width: 60%;
+            height: 100%;
+            background-color: rgb(244, 237, 237);
+        }
+        .left img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .right{
+            padding: 40px;
+        }
+        .right h5{
+            color: gray;
+        }
+        .right-part1{
+            padding-top: 70px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .right-part1 .star{
+            font-size: 25px;
+        }
+        .quantity{
+            padding-top: 20px;
+        }
+        .para p{
+            padding-top: 20px;
+            font-size: 14px;
+            color: gray;
+        }
+        .button-set{
+            display: flex;
+            gap: 30px;
+            padding-top: 40px;
+        }
+        .button1{
+            padding: 10px 30px;
+            border: 3px solid rgb(144, 100, 100);
+            cursor: pointer;
+
+        }
+        .button1:hover{
+            color: white;
+            background-color: rgb(144, 100, 100);;
+        }
+        .button2{
+            padding: 10px 35px;
+            border: 3px solid rgb(144, 100, 100);
+            cursor: pointer;
+        }
+        .button2:hover{
+            color: white;
+            background-color: rgb(144, 100, 100);
+        }
+        .button-set a{
+            text-decoration: none;
+            color: black;
+            font-size: 15px;
+            font-weight: 400;
+        }
+        .button1:hover a{
+            color: white;
+        }
+        .button2:hover a{
+            color: white;
+        }
+        .footer{
+            display: flex;
+            justify-content: center;
+            padding-top: 130px;
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            <div class="logo">logo</div>
+            <div class="humberger">humberger</div>
+        </div>
+        <div class="sec-main">
+            <div class="left">
+                <img src="./Newfolder/1.jpg" alt="">
+            </div>
+
+            <div class="right">
+                <h1>CURLY TOUCH V</h1>
+                <h5>Hair treament set</h5>
+                <div class="right-part1">
+                    <h3>$400.00</h3>
+                    <div class="star">
+                        <i class="ri-star-s-fill"></i>
+                        <i class="ri-star-s-fill"></i>
+                        <i class="ri-star-s-fill"></i>
+                        <i class="ri-star-s-fill"></i>
+                        <i class="ri-star-s-fill"></i>
+                    </div>
+                </div>
+                <div class="quantity">
+                    QUANTITY
+                </div>
+                <div class="para">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi nesciunt placeat eveniet eum iusto ad numquam maiores nostrum, soluta maxime tempore aperiam ut magnam totam doloribus velit. Explicabo recusandae voluptatibus molestias beatae, officiis ipsam. Architecto deserunt voluptatem eum laborum possimus!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. A quia aut voluptatibus explicabo, aliquid quae. Optio saepe ipsa mollitia laboriosam nesciunt consectetur. Distinctio nam nulla maiores voluptatem explicabo eveniet ducimus magnam, nisi incidunt earum? Debitis optio nam ad ipsum maxime?
+                    </p>
+                </div>
+                <div class="button-set">
+                    <button class="button1"><a href="">BUY NOW</a></button>
+                    <button class="button2"><a href="">ADD TO CART</a></button>
+                </div>
+                <h4 class="footer">INSTAGRAM | FACEBOOK | TWITTER</h4>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
