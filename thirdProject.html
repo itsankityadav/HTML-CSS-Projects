@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        html,body{
+            height: 100%;
+            width: 100%;
+        }
+        .main{
+            height: 100%;
+            width: 100%;
+        }
+        .header{
+            padding: 25px;
+            padding-left: 50px;
+            border: 2px solid rgb(227, 227, 227);
+        }
+        .main-sec{
+            height: 87.2%;
+            width: 100%;
+            display: flex;
+        }
+        .main-sec .left{
+            height: 100%;
+            width: 50%;
+            /* background-color: red; */
+            padding: 50px;
+        }
+        .main-sec .right{
+            height: 100%;
+            width: 50%;
+            background-color: blue;
+        }
+        .express{
+            display: flex;
+            justify-content: space-between;
+        }
+        #Edit{
+            padding: 6px 20px;
+            background-color: white;
+            border: 1px solid grey;
+            border-radius: 3px;
+            font-family: monospace;
+            font-size: 14px;
+            font-weight: 600;
+        }
+        .email{
+            display: flex;
+            justify-content: space-between;
+        }
+        #emails{
+            padding: 6px 20px;
+            background-color: white;
+            border: 1px solid grey;
+            border-radius: 3px;
+            font-family: monospace;
+            font-size: 14px;
+            font-weight: 600;
+        }
+        .linedraw{
+            border-bottom: 1px solid rgb(196, 193, 193);
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+        }
+        label{
+            padding: 10px 0px;
+        }
+        input{
+            height: 33px;
+            padding-left: 10px;
+            border: 2px solid black;
+        }
+        ::placeholder{
+            font-size: 20px;
+            font-family: monospace;
+            text-transform: uppercase;
+        }
+        .form-checkbox-align{
+            display: flex;
+            align-items: center;
+            height: 50px;
+        }
+        .form-checkbox-align input{
+            height: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            <h1>SUKUDO.</h1>
+        </div>
+        <div class="main-sec">
+            <div class="left">
+                <div class="express">
+                    <h3>Express Checkout</h3>
+                    <button id="Edit">EDIT</button>
+                </div>
+                <div class="card">
+                    card
+                    <div class="linedraw"></div>
+                </div>
+                <div class="email">
+                    <h3>01. Email Address</h3>
+                    <button id="emails">EDIT</button>
+                </div>
+                <div class="linedraw"></div>
+                <div class="Payment">
+                    <h3>02. Payment Information</h3>
+                    <form>
+                        <label for="Name">Name on card</label>
+                        <input type="text" id="Name" placeholder="James May">
+
+                        <label for="cardnumber">Card Number</label>
+                        <input type="text" id="cardname" placeholder="James May">
+
+                        <label for="address">Address</label>
+                        <input type="text" id="address" placeholder="James May">
+                        
+                        <div class="form-checkbox-align">
+                            <input type="checkbox" id="delivery">
+                            <label for="delivery">Delivery Address same as Biling Address</label>
+                        </div>
+                    </form>
+                </div>
+                <div class="linedraw"></div>
+                <div class="delivery-section">
+                    <h3>03. Delivery Options</h3>
+                </div>
+                <div class="linedraw"></div>
+                <div class="Confirmation-section">
+                    <h3>04. Confirmation</h3>
+                </div>
+                <div class="linedraw"></div>
+
+            </div>
+            <div class="right"></div>
+        </div>
+    </div>
+</body>
+</html>
