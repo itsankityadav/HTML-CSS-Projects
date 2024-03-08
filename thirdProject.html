@@ -95,6 +95,21 @@
         .form-checkbox-align input{
             height: 20px;
         }
+        .cart-box{
+            display: flex;
+            background-color: aqua;
+            
+        }
+        .sub-part1{
+            display: flex;
+            height: 15%;
+            background-color: red;
+        }
+        .cart-box .part1 .sub-part1 img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
     </style>
 </head>
 <body>
@@ -146,7 +161,35 @@
                 <div class="linedraw"></div>
 
             </div>
-            <div class="right"></div>
+            <div class="right">
+                <h3>Order Summary</h3>
+                <div class="cart-box">
+                    <div class="part1">
+                        <h4>Details</h4>
+                        <div class="sub-part1">
+                            <img src="./Newfolder/14.jpg" alt="">
+                            <div class="sub-sub-part1">
+                                <h3>Hayai Tturbo 4.0</h3>
+                                <h5>M04593823</h5>
+                                <h5>Block / White</h5>
+                                <h5>Remove</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="part2">
+                        <h4>Price</h4>
+                        <h3>$4,200.00</h3>
+                    </div>
+                    <div class="part3">
+                        <h3>Qty</h3>
+                        <h3>1</h3>
+                    </div>
+                    <div class="part4">
+                        <h4>Price</h4>
+                        <h3>$4,200.00</h3>
+                    </div>
+                </div>           
+            </div>
         </div>
     </div>
 </body>
